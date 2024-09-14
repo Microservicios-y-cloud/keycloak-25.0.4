@@ -73,46 +73,6 @@
                 </#if>
             </@userProfileCommons.userProfileFormFields>
 
-            <!-- Aquí es donde agregamos el campo de fecha de nacimiento -->
-            <div class="form-group">
-                <div class="${properties.kcLabelWrapperClass!}">
-                    <label for="user.attributes.dob" class="${properties.kcLabelClass!}">
-                    Date of birth</label>
-                </div>
-
-                <div class="${properties.kcInputWrapperClass!}">
-                    <input type="date" class="${properties.kcInputClass!}" 
-                    id="user.attributes.dob" name="user.attributes.dob" 
-                    value="${(register.formData['user.attributes.dob']!'')}"/>
-                </div>
-            </div>
-
-            <!-- Photo URL -->
-            <div class="form-group">
-                <div class="${properties.kcLabelWrapperClass!}">
-                    <label for="user.attributes.photoURL" class="${properties.kcLabelClass!}">
-                    Photo URL</label>
-                </div>
-                <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" class="${properties.kcInputClass!}" 
-                    id="user.attributes.photoURL" name="user.attributes.photoURL" 
-                    value="${(register.formData['user.attributes.photoURL']!'')}"/>
-                </div>
-            </div>
-
-            <!-- Description -->
-            <div class="form-group">
-                <div class="${properties.kcLabelWrapperClass!}">
-                    <label for="user.attributes.description" class="${properties.kcLabelClass!}">
-                    Description</label>
-                </div>
-                <div class="${properties.kcInputWrapperClass!}">
-                    <textarea class="${properties.kcInputClass!}" id="user.attributes.description" name="user.attributes.description">
-                        ${(register.formData['user.attributes.description']!'')}
-                    </textarea>
-                </div>
-            </div>
-
             <!-- User Type -->
             <div class="form-group">
                 <div class="${properties.kcLabelWrapperClass!}">
@@ -123,32 +83,6 @@
                         <option value="customer">Customer</option>
                         <option value="supplier">Supplier</option>
                     </select>
-                </div>
-            </div>
-
-            <!-- Web URL and Social Media (visible only if Supplier) -->
-            <div id="supplier-fields" style="display:none;">
-                <!-- Web URL -->
-                <div class="form-group">
-                    <div class="${properties.kcLabelWrapperClass!}">
-                        <label for="user.attributes.webURL" class="${properties.kcLabelClass!}">Web URL</label>
-                    </div>
-                    <div class="${properties.kcInputWrapperClass!}">
-                        <input type="text" class="${properties.kcInputClass!}" 
-                        id="user.attributes.webURL" name="user.attributes.webURL" 
-                        value="${(register.formData['user.attributes.webURL']!'')}"/>
-                    </div>
-                </div>
-
-                <!-- Social Media List -->
-                <div class="form-group">
-                    <div class="${properties.kcLabelWrapperClass!}">
-                        <label for="user.attributes.socialMedia" class="${properties.kcLabelClass!}">Social Media</label>
-                    </div>
-                    <div class="${properties.kcInputWrapperClass!}">
-                        <textarea class="${properties.kcInputClass!}" id="user.attributes.socialMedia" name="user.attributes.socialMedia" 
-                        placeholder="Enter social media URLs separated by commas">${(register.formData['user.attributes.socialMedia']!'')}</textarea>
-                    </div>
                 </div>
             </div>
 
